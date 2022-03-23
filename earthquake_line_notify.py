@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-import os
+import params
 import requests
 import argparse
 import time
+
+from params import TOKEN
 
 parser = argparse.ArgumentParser()
 parser.add_argument("level")
@@ -36,5 +38,5 @@ def lineNotifyMessage(_token, _msg):
 
 
 if __name__ == "__main__":
-    __token__ = MYTOKEN
+    __token__ = TOKEN
     lineNotifyMessage(__token__, message)
